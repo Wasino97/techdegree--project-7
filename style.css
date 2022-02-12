@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex: auto;
+    background-color: seagreen;
+    justify-content: center;
+    text-align: center;
+    max-height: 80px;
+}
+
+h1 {
+    align-self: center;}
+
+#bell {
+    transform: scale(1);
+    max-width: 40px;
+}
+
+#person1 {
+    max-width: 2rem;
+    max-height: 2rem;
+    align-self: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+}
