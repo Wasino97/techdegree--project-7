@@ -30,4 +30,14 @@ ul {
 }
 
 nav {
+
+}
+
+.home,
+.members,
+.visit,
+.settings {
+    transform: scale(.1);
+    max-width: 320px;
+    max-height: 55px;
 }
