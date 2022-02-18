@@ -1,21 +1,29 @@
-/*
+
 
 .header {
     display: flex;
     flex: auto;
     background-color: seagreen;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     max-height: 80px;
 }
-
-h1 {
-    align-self: center;}
 
 #bell {
     transform: scale(1);
     max-width: 40px;
 }
+
+#person1 {
+    max-width: 3rem;
+    align-self: center;
+    border-radius: 50%;
+}
+/*
+h1 {
+    align-self: center;}
+
+
 
 #person1 {
     max-width: 2rem;
