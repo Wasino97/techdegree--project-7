@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
-    
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    color: white;
 }
 
 .header {
@@ -8,7 +12,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #7549ffcc;
+    background-color: black;
+    height: 100px
+}
+
+.header h3 {
+    color: white;
+}
+
+#bell {
+    fill: white;
+}
+
+.vertical {
+    border-left: 2px solid lightgray;
+    height: 55px;
 }
 
 .nav {
@@ -16,6 +34,8 @@
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #00000024;
 }
 
 .main {
@@ -33,6 +53,176 @@
     flex-direction: column;
 }
 
+.facebook,
+.instagram,
+.twitter {
+    margin: 1rem 0;
+    background-color: #d3d3d340;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    border: solid 2px gray;
+}
+
+.social-text {
+    margin: 0 1em;
+}
+
+.social-text p:first-child {
+    font-size: larger;
+    margin: 0 .3em;
+}
+
+.social-text p:nth-child(2) {
+    font-size: 50px;
+    margin: 0.3em 0;
+    margin-top: 0;
+}
+
+.social-image {
+    align-self: center;
+}
+
+.members,
+.activity,
+.message,
+.settings {
+    margin: 1rem;    
+    text-transform: uppercase;
+}
+
+.members-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.profile-image {
+    border-radius: 50%;
+}
+
+#person1 {
+    max-width: 3.5rem;
+    align-self: center;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert-banner {
+    margin: 1rem;
+    background-color: antiquewhite;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.tab {
+    width: 65%;
+    background-color: #7a7a7a45;
+    height: 80px;
+    margin-left: auto;
+    border-left: solid 2px gray;
+    border-bottom: solid 2px gray;
+}
+
+.headline {
+    float: left;
+    margin: 1.26rem 1rem;
+}
+
+.traffic,
+.daily,
+.mobile,
+.social-container {
+    margin: 0 1rem;
+    text-transform: uppercase;
+}
+
+.social-container {
+    margin: 1em;
+}
+
+.traffic-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -50px;
+}
+
+svg {
+    fill: black;
+}
+
+
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    margin: 1rem 0;
+    height: 8vh;
+    border-radius: 10px;
+    border-color: gray;
+    width: 100%;
+    background-color: #d3d3d340;
+}
+
+.form-area {
+    margin: 1rem 0;
+    height: 30vh;
+    border-radius: 10px;
+    border: solid 2px gray;
+    background-color: #d3d3d340;
+}
+
+.button-primary {
+    margin: 1rem 0;
+    height: 9vh;
+    border-radius: 6px;
+    border-color: gray;
+    background-color: antiquewhite
+}
+
+#save {
+    width: 40vw;
+}
+
+#cancel {
+    width: 40vw;
+    height: 9vh;
+    border-radius: 6px;
+    background-color: antiquewhite;
+}
+
+.setting-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch-light {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+}
+
+.switch-light .alert-light {
+    color: #333;
+    width: 175px;
+    margin-left: 93px;
+}
+
+
+
+
 /* .header {
     display: flex;
     flex: auto;
@@ -41,12 +231,6 @@
     justify-content: space-between;
 }
 
-
-#person1 {
-    max-width: 3rem;
-    align-self: center;
-    border-radius: 50%;
-}
 
 
 .widget-container-full, .widget-container-half {
