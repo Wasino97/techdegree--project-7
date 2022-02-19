@@ -123,7 +123,7 @@ h1 {
 
 .tab {
     width: 65%;
-    background-color: #7a7a7a45;
+    background-color: #faebd773;
     height: 80px;
     margin-left: auto;
     border-left: solid 2px gray;
@@ -186,8 +186,9 @@ svg {
     margin: 1rem 0;
     height: 9vh;
     border-radius: 6px;
-    border-color: gray;
-    background-color: antiquewhite
+    border-color: white;
+    background-color: black;
+    color: white;
 }
 
 #save {
@@ -198,7 +199,6 @@ svg {
     width: 40vw;
     height: 9vh;
     border-radius: 6px;
-    background-color: antiquewhite;
 }
 
 .setting-button {
@@ -220,8 +220,11 @@ svg {
     margin-left: 93px;
 }
 
-
-
+#traffic-chart,
+#daily-chart,
+#mobile-chart {
+    margin: 2rem 0;
+}
 
 /* .header {
     display: flex;
