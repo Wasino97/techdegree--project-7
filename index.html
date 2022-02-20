@@ -106,90 +106,92 @@
 
         <hr size="2" width="100%" color="gray">
 
-        <section class="daily">
-            <h3>Daily Traffic</h3>
-            <div class="widget-container-half">
-                <canvas id="daily-chart"></canvas>
-            </div>
+        <section class="full-container">
+            <section class="daily">
+                <h3>Daily Traffic</h3>
+                <div class="widget-container-half">
+                    <canvas id="daily-chart"></canvas>
+                </div>
 
-            <script>
-                const dailyCanvas = document.getElementById('daily-chart').getContext('2d');
-
-                const dailyData = {
-                labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-                datasets: [{
-                    label: '# of Hits',
-                    data: [75, 115, 175, 125, 225, 200, 100],
-                    backgroundColor: 'black',
-                    borderWidth: 1
-                }]
-            };
-
-                const dailyOptions = {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                },
-                plugins: {
-                    legend: {
-                    display: false
-                }
-                }
-            };
-
-                let dailyChart = new Chart(dailyCanvas, {
-                type: 'bar',
-                data: dailyData,
-                options: dailyOptions
-            });
-            </script>
-        </section>
-
-        <hr size="2" width="100%" color="gray">
-
-        <section class="mobile">
-            <h3>Mobile Users</h3>
-            <div class="widget-container-half">
-                <canvas id="mobile-chart"></canvas>
                 <script>
-                    const mobileCanvas = document.getElementById('mobile-chart').getContext('2d');
+                    const dailyCanvas = document.getElementById('daily-chart').getContext('2d');
 
-                    const mobileData = {
-                    labels: ['Desktop', 'Tablet', 'Phones'],
+                    const dailyData = {
+                    labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
                     datasets: [{
-                        label: '# of Users',
-                        data: [2000, 550, 500],
-                        borderWidth: 0,
-                        backgroundColor: [
-                            'black',
-                            'gray',
-                            'antiquewhite'
-                        ]
+                        label: '# of Hits',
+                        data: [75, 115, 175, 125, 225, 200, 100],
+                        backgroundColor: 'black',
+                        borderWidth: 1
                     }]
                 };
 
-                    const mobileOptions = {
-                    aspectRatio: 1.9,
+                    const dailyOptions = {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    },
                     plugins: {
                         legend: {
-                            positions: 'right',
-                            labels: {
-                                boxWidth: 20,
-                                fontStyle: 'bold'
-                            }
-                        }
+                        display: false
+                    }
                     }
                 };
 
-                    let mobileChart = new Chart(mobileCanvas, {
-                    type: 'doughnut',
-                    data: mobileData,
-                    options: mobileOptions
+                    let dailyChart = new Chart(dailyCanvas, {
+                    type: 'bar',
+                    data: dailyData,
+                    options: dailyOptions
                 });
                 </script>
-            </div>
-        </section>
+            </section>
+
+            <hr id="vline" size="2" width="100%" color="gray">
+
+            <section class="mobile">
+                <h3>Mobile Users</h3>
+                <div class="widget-container-half">
+                    <canvas id="mobile-chart"></canvas>
+                    <script>
+                        const mobileCanvas = document.getElementById('mobile-chart').getContext('2d');
+
+                        const mobileData = {
+                        labels: ['Desktop', 'Tablet', 'Phones'],
+                        datasets: [{
+                            label: '# of Users',
+                            data: [2000, 550, 500],
+                            borderWidth: 0,
+                            backgroundColor: [
+                                'black',
+                                'gray',
+                                'antiquewhite'
+                            ]
+                        }]
+                    };
+
+                        const mobileOptions = {
+                        aspectRatio: 1.9,
+                        plugins: {
+                            legend: {
+                                positions: 'right',
+                                labels: {
+                                    boxWidth: 20,
+                                    fontStyle: 'bold'
+                                }
+                            }
+                        }
+                    };
+
+                        let mobileChart = new Chart(mobileCanvas, {
+                        type: 'doughnut',
+                        data: mobileData,
+                        options: mobileOptions
+                    });
+                    </script>
+                </div>
+            </section>
+        </section>    
 
         <hr size="2" width="100%" color="gray">
 

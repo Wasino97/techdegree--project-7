@@ -201,6 +201,16 @@ svg {
     border-radius: 6px;
 }
 
+.button-primary:hover {
+    color: black;
+    background-color: antiquewhite;
+    border-color: black;
+}
+
+#cancel:hover {
+    background-color: antiquewhite;
+}
+
 .setting-button {
     display: flex;
     justify-content: space-between;
@@ -226,43 +236,62 @@ svg {
     margin: 2rem 0;
 }
 
-/* .header {
-    display: flex;
-    flex: auto;
-    grid-area: header;
-    background-color: seagreen;
-    justify-content: space-between;
-}
-
-
-
-.widget-container-full, .widget-container-half {
+.widget-container-full,
+.widget-container-half {
     width: 95vw;
 }
 
 @media (min-width: 768px) {
-    .grid-container {
-        display: block;
-        grid-template-columns: 55px 1fr;
-        grid-template-areas: 
-        'header header'
-        'nav main';
+    /*.nav {
+        margin: 0;
+        width: 12%;
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+        display: grid
+    }
+    */
+    .bell {
+        margin-left: 23rem;
     }
 
-    .main { 
-        grid-template-columns: 50%;
+    .tab {
+        width: 79%;
     }
 
-    .traffic, .social-container {
-        grid-column: 1 / 2;
+    .traffic-header {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .daily, .members, .message, .activity, .settings {
-        grid-column: 1 / 1; 
+    li {
+        margin: 0 1rem;
+        align-self: center;
     }
 
-    .mobile  {
-        grid-column: 2 / 2;
+    #save {
+        width: 46vw;
+    }
+
+    #cancel {
+        width: 44vw;
+    }
+
+    .traffic,
+    .social-container {
+        grid-column: 1 / span 2;
+    }
+
+    .daily, 
+    .members,
+    .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile,
+    .activity, 
+    .settings {
+        grid-column: 2 / span 1;
     }
 
     .widget-container-full {
@@ -273,25 +302,12 @@ svg {
         width: 45vw;
     }
 
+    .full-container {
+        display: flex;
+    }
+
+    #vline {
+        height: 36vh;
+        max-width: 0px;
+    }
 }
-
-/*
-h1 {
-    align-self: center;}
-
-
-
-ul {
-    list-style-type: none;
-}
-
-.home,
-.members,
-.visit,
-.settings {
-    transform: scale(.1);
-    max-width: 320px;
-    max-height: 55px;
-}
-
-*/ 
