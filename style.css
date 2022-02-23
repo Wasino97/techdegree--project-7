@@ -158,7 +158,9 @@ svg {
     fill: black;
 }
 
-
+.activity {
+    text-align-last: center;
+}
 
 .widget-container {
     display: flex;
@@ -309,5 +311,42 @@ svg {
     #vline {
         height: 36vh;
         max-width: 0px;
+    }
+
+    .social-container h3 {
+        min-width: 8rem;
+        margin-right: 0.5rem;
+    }
+
+    .social-media {
+        display: flex;
+    }
+
+    .facebook, .instagram, .twitter {
+        margin: 1rem .5rem;
+        padding: 1rem 0.5rem;
+        max-width: 15rem;
+    }
+
+    .members-container {
+        display: flex;
+        text-align: start;
+        align-items: center;
+    }
+
+    .members-container p {
+        margin-left: auto;
+    }
+
+    .members-text {
+        margin-right: 10rem;
+        margin-left: 2rem;
+        align-self: center;
+        text-align-last: auto;
+    }
+    
+    .members-container-two {
+        display: flex; 
+        padding: 1rem;
     }
 }
