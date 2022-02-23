@@ -13,7 +13,8 @@ h1 {
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 100px
+    height: 100px;
+    width: 99vw;
 }
 
 .header h3 {
@@ -244,15 +245,20 @@ svg {
 }
 
 @media (min-width: 768px) {
-    /*.nav {
-        margin: 0;
-        width: 12%;
-        height: 100%;
-        position: fixed;
-        overflow: auto;
-        display: grid
-    }
-    */
+   .grid-container {
+       grid-template-columns: 55px 1fr;
+       grid-template-areas: 'header header'
+       'nav main';
+   }
+   .nav {
+       display: block;
+       padding: 1rem 0rem;
+   }
+
+   nav img {
+       margin-bottom: 1rem;
+   }
+
     .bell {
         margin-left: 23rem;
     }
@@ -348,5 +354,60 @@ svg {
     .members-container-two {
         display: flex; 
         padding: 1rem;
+    }
+
+    .activity {
+        text-align-last: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #bell {
+        margin-left: 30rem;
+    }
+
+    #vline {
+        height: 45vh;
+    }
+
+    .social-media {
+        justify-content: space-between;
+    }
+
+    .facebook,
+    .instagram, 
+    .twitter {
+        max-width: 100%;
+    }
+
+    .members hr {
+        display: none;
+    }
+
+    .members-text {
+        margin-right: 0;
+    }
+
+    .members {
+        float: left;
+        margin: 0 1rem;
+    }
+
+    .switch-light {
+        overflow-y: hidden
+    }
+
+    .message {
+        float: left;
+        width: 50%;
+    }
+
+    #timezone {
+        width: 46%;
+        margin-top: 2.5rem;
+    }
+
+    .setting-button {
+        margin-top: -0.1rem;
     }
 }
