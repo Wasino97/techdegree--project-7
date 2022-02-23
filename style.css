@@ -14,7 +14,6 @@ h1 {
     align-items: center;
     background-color: black;
     height: 100px;
-    width: 99vw;
 }
 
 .header h3 {
@@ -23,6 +22,18 @@ h1 {
 
 #bell {
     fill: white;
+}
+
+#notifications {
+    background-color: #4ffd2a;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    float: right;
+}
+
+.bell:hover {
+    transform: scale(1.3);
 }
 
 .vertical {
@@ -250,6 +261,15 @@ svg {
        grid-template-areas: 'header header'
        'nav main';
    }
+
+   .main {
+       width: 92vw;
+   }
+
+   .header {
+       width: 98vw;
+   }
+
    .nav {
        display: block;
        padding: 1rem 0rem;
@@ -391,6 +411,7 @@ svg {
     .members {
         float: left;
         margin: 0 1rem;
+        width: 50vw;
     }
 
     .switch-light {
@@ -409,5 +430,9 @@ svg {
 
     .setting-button {
         margin-top: -0.1rem;
+    }
+
+    .activity hr:last-child {
+        display: none;
     }
 }
