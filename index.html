@@ -15,7 +15,7 @@
 </head>
 <body class="grid-container">
     <header> 
-        <div class="header">
+        <div class="header" id="home">
             <h1>My App</h1> 
             <div class="bell">
                 <svg width="30px" height="30px" id="bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117.033 122.88">
@@ -29,16 +29,16 @@
         </div>
     </header>
     <nav class="nav"> 
-        <a href="#">
+        <a href="#home">
             <img src="svgs/home.svg" alt="home link" width="40px" height="40px">
         </a>
-        <a href="#">
+        <a href="#members">
             <img src="svgs/members.svg" alt="members link" width="40px" height="40px">
         </a>
-        <a href="#">
+        <a href="#social">
             <img src="svgs/bar-chart.svg" alt="visit link" width="40px" height="40px">
         </a>
-        <a href="#">
+        <a href="#settings">
             <img src="svgs/settings.svg" alt="settings link" width="40px" height="40px">
         </a>
     </nav>
@@ -195,7 +195,7 @@
 
         <hr size="2" width="100%" color="gray">
 
-        <div class="social-container">
+        <div class="social-container" id="social">
             <h3>Social Stats</h3>
             <div class='social-media'>
                 <div class="facebook">
@@ -238,7 +238,7 @@
 
         <hr size="2" width="100%" color="gray">
         
-        <section class="members">
+        <section class="members" id="members">
             <h3>New Members</h3>
 
             <div class="members-container">
@@ -327,7 +327,7 @@
 
         <hr size="2" width="100%" color="gray">
 
-        <section class="settings">
+        <section class="settings" id="settings">
             <h3>Settings</h3>
             <label class="switch-light" onclick="">
                 <input type="checkbox">
