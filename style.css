@@ -54,7 +54,7 @@ h1 {
     grid-area: main;
 }
 
-.grid-container {
+/*.grid-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -64,7 +64,7 @@ h1 {
     'main';
     flex-direction: column;
 }
-
+*/
 .facebook,
 .instagram,
 .twitter {
@@ -75,11 +75,11 @@ h1 {
     border-radius: 10px;
     border: solid 2px gray;
 }
-
+/*
 .social-text {
     margin: 0 1em;
 }
-
+*/
 .social-text p:first-child {
     font-size: larger;
     margin: 0 .3em;
@@ -250,11 +250,11 @@ svg {
     margin: 2rem 0;
 }
 
-.widget-container-full,
+/*.widget-container-full,
 .widget-container-half {
     width: 95vw;
 }
-
+*/
 @media (min-width: 768px) {
    .grid-container {
        grid-template-columns: 55px 1fr;
@@ -262,14 +262,14 @@ svg {
        'nav main';
    }
 
-   .main {
+   /*.main {
        width: 92vw;
    }
-
+   
    .header {
        width: 98vw;
    }
-
+    */
    .nav {
        display: block;
        padding: 1rem 0rem;
