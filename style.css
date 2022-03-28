@@ -95,6 +95,22 @@ h1 {
     align-self: center;
 }
 
+.social-container svg {
+    width: 40px;
+    height: 40px;
+    fill: antiquewhite;
+}
+
+.social-image-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .members,
 .activity,
 .message,
@@ -269,16 +285,12 @@ svg {
    .header {
        width: 98vw;
    }
-    */
+    
    .nav {
        display: block;
        padding: 1rem 0rem;
    }
-
-   nav img {
-       margin-bottom: 1rem;
-   }
-
+   */
     .bell {
         margin-left: 23rem;
     }
