@@ -8,12 +8,15 @@ h1 {
 }
 
 .header {
-    grid-area: header;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: black;
     height: 100px;
+}
+
+header {
+    grid-area: header;
 }
 
 .header h3 {
@@ -54,7 +57,7 @@ h1 {
     grid-area: main;
 }
 
-/*.grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -64,7 +67,7 @@ h1 {
     'main';
     flex-direction: column;
 }
-*/
+
 .facebook,
 .instagram,
 .twitter {
@@ -285,12 +288,12 @@ svg {
    .header {
        width: 98vw;
    }
-    
+    */
    .nav {
        display: block;
        padding: 1rem 0rem;
    }
-   */
+
     .bell {
         margin-left: 23rem;
     }
@@ -370,6 +373,7 @@ svg {
         display: flex;
         text-align: start;
         align-items: center;
+        padding: 1.4rem;
     }
 
     .members-container p {
